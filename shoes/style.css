@@ -1,0 +1,382 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: rgba(67, 62, 62, 0.97) ;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.LimitedOffer{
+    font-size: 20px ;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+.slider{
+    background: url("https://wallpapercave.com/wp/GmUFn4b.jpg");
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84%);*/
+    overflow: hidden;
+}
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.sliderItem{
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10;
+    right: 57px;
+    color: white;
+    font-size: 45px;
+    font-weight: 900;
+    text-align: center;
+    
+}
+.sliderPrice{
+    position: absolute;
+    top: 10;
+    left: 57px;
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+   
+}
+
+.buyButton{
+    position: absolute;
+    bottom: 76px;
+    left: 50px;
+    color: rgb(245, 243, 243);
+    font-size: 38px;
+    font-weight: 400;
+    text-align: center;
+    border: 4px solid rgb(221, 226, 221);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+}
+
+ .buyButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.featureIcon{
+    width: 50px;
+    height: 50px;
+}
+
+.featureTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20;
+    color: whitesmoke;
+    border: 2px solid greenyellow;
+    padding: 5px;
+}
+.featureDesc{
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+}
+.product{
+    color: maroon;
+    position: relative;
+    height: 50vw;
+}
+.payment{
+    width: 500px;
+    height: 700px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto; 
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 1px 3px 5px 26px rgba(0,0,0,0.29);
+    -webkit-box-shadow: 1px 3px 5px 26px rgba(0,0,0,0.29);
+    -moz-box-shadow: 1px 3px 5px 26px rgba(0,0,0,0.29);
+    background: #00ffd2;
+    background: linear-gradient(179deg,#00ffd2 30%, #fff600 80%);
+    background: -webkit-linear-gradient(179deg,#00ffd2 30%, #fff600 80%);
+    background: -moz-linear-gradient(179deg,#00ffd2 30%, #fff600 80%);
+}
+.payTitle{
+    padding: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    color: navy;
+}
+label{
+    font-size: 18px;
+    font-weight: 300;
+}
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid gray;
+}
+.payInput::placeholder{
+    color: rgb(79, 194, 233);
+}
+.cardIcons{
+    padding: 10px;
+}
+.payButton{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    left: 241px;
+    top: 741px;;
+    bottom: -50;
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+    background: #ff0000;
+    background: radial-gradient(ellipse farthest-corner at center center, #ff0000 0%, rgba(253,219,0,0.81) 80%);
+    background: -webkit-radial-gradient(ellipse farthest-corner at center center, #ff0000 0%, rgba(253,219,0,0.81) 80%);
+    background: -moz-radial-gradient(ellipse farthest-corner at center center, #ff0000 0%, rgba(253,219,0,0.81) 80%);
+    text-align: center;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: black;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.productImg{
+    width: 50%;
+}
+.productDetails{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px; 
+}
+.productTitle{
+    font-size: 75px;
+    font-weight: 900;
+}
+.productDesc{
+    color: gray;
+    font-size: 24px;   
+}
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+.color{
+    height: 32px;
+    width: 32px;
+    background-color:gray;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color:last-child{
+    background-color: black;
+
+}
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.productButton{
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.productButton:hover{
+    background-color: white;
+    color: black;
+}
+
+.gallery{
+    padding: 50px;
+    display: flex;
+}
+
+.galleryItem{
+    flex: 1;
+    padding: 50px;
+}
+
+.galleryImg{
+    width: 100%;
+}
+
+.newSeason{
+    display: flex;
+}
+
+.nsItem{
+    flex: 1;
+    background-color: black;
+    color: yellow;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nsImg{
+    width: 100%;
+    height: 500px;
+}
+
+.nsTitleSm{
+    font-size: 40px;
+
+}
+
+.nsButton{
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.footer{
+    display: flex;
+}
+
+.footerLeft{
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.fMenuTitle{
+    font-size: 16px;
+}
+
+.fList{
+    padding: 0;
+    list-style: none;
+}
+
+.fListItem{
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.footerRight{
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fInput{
+    padding: 5px;
+}
+
+.fbutton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+
+}
+.fIcons{
+    display: flex;
+}
+
+.fIcon{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.copyright{
+    font-weight: 300;
+    font-size: 14px;
+}
